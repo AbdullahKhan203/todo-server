@@ -1,4 +1,4 @@
-name: Backend CI and CD simulation
+name: Backend CI and CD Simulation
 
 on:
   push:
@@ -7,13 +7,13 @@ on:
 
   pull_request:
     branches:
-      - main   
+      - main
 
 jobs:
-     build:
-     runs-on: ubuntu-latest
+  build:
+    runs-on: ubuntu-latest
 
-     steps:
+    steps:
       - name: Checkout Code
         uses: actions/checkout@v4
 
