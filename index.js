@@ -33,7 +33,7 @@ const app = express();
 connectDB();
 
 // test backend ci
-console.log("CI test");
+console.log("CI test again");
 
 app.use(cors());
 app.use(express.json());
