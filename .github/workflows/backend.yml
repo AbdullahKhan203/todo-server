@@ -1,4 +1,4 @@
-name: Backend CI
+name: Backend CI and CD simulation
 
 on:
   push:
@@ -7,14 +7,13 @@ on:
 
   pull_request:
     branches:
-      - main
+      - main   
 
 jobs:
-  build:
+     build:
+     runs-on:ubuntu-latest
 
-    runs-on: ubuntu-latest
-
-    steps:
+     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
 
@@ -29,21 +28,5 @@ jobs:
       - name: Verify Server Starts
         run: node --check index.js
 
-
-
-
-
-
-
-
-
-
-
-
-#  1. Push code to GitHub
-# 2. GitHub creates fresh Ubuntu machine
-# 3. Download your backend code
-# 4. Install Node.js
-# 5. Install dependencies
-# 6. Check index.js syntax
-# 7. Pass or Fail CI       
+      - name: Simulate Deployment
+        run: echo "🚀 Backend deployed successfully (simulation)"
