@@ -32,6 +32,9 @@ const app = express();
 
 connectDB();
 
+// test backend ci
+console.log("CI test");
+
 app.use(cors());
 app.use(express.json());
 
