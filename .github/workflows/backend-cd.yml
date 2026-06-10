@@ -26,3 +26,30 @@ jobs:
 
       - name: Simulate Deployment
         run: echo "🚀 Backend deployed successfully (simulation)"
+
+
+
+
+
+
+
+
+
+
+
+# workflow:
+        # Push code to GitHub
+# ↓
+# Create fresh Ubuntu machine
+# ↓
+# Download code
+# ↓
+# Install Node.js
+# ↓
+# Install dependencies
+# ↓
+# Check syntax of index.js
+# ↓
+# Print "deployment success"
+# ↓
+# Delete machine
