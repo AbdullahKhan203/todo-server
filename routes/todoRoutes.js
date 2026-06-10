@@ -128,9 +128,7 @@ router.put("/:id", async (req, res) => {
         text,
         completed,
       },
-      {
-        new: true,
-      }
+      { returnDocument: "after" }
     );
 
     if (!todo) {
@@ -159,9 +157,7 @@ router.patch("/:id/status", async (req, res) => {
       {
         completed,
       },
-      {
-        new: true,
-      }
+      { returnDocument: "after" }
     );
 
     res.json(todo);
